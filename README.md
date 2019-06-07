@@ -1,6 +1,7 @@
 # ProjetoLopC9
 //etapa9
 
+
 var tela=1
 var xin2=[]
 var yin2=[]
@@ -170,62 +171,63 @@ if( estadoDisparo ) {
   }
     if(dist(xd,yd,vxi[1],vyi[1])< raioO + raioD)
   {
-    vxi[1]=0
-       vyi[1]=0
+    vxi[1]=1000
+       vyi[1]=100
+
       pontos=pontos+1
   }
   if(dist(xd,yd,vxi[2],vyi[2])< raioO + raioD)
   {
-   vxi[2]=0
-       vyi[2]=0
+   vxi[2]=1000
+       vyi[2]=1000
       pontos=pontos+1
   }
    if(dist(xd,yd,vxi[3],vyi[3])< raioO + raioD)
   {
-   vxi[3]=0
-       vyi[3]=0
+   vxi[3]=1000
+       vyi[3]=1000
       pontos=pontos+1
   }
     if(dist(xd,yd,vxi[4],vyi[4])< raioO + raioD)
   {
-    vxi[4]=0
-       vyi[4]=0
+    vxi[4]=1000
+       vyi[4]=1000
       pontos=pontos+1
   }
      if(dist(xd,yd,vxi[5],vyi[5])< raioO + raioD)
   {
-   vxi[5]=0
-       vyi[5]=0
+   vxi[5]=1000
+       vyi[5]=1000
       pontos=pontos+1
   }
        if(dist(xd,yd,vxi[6],vyi[6])< raioO + raioD)
   {
-   vxi[6]=0
-       vyi[6]=0
+   vxi[6]=1000
+       vyi[6]=1000
       pontos=pontos+1
   }
        if(dist(xd,yd,vxi[7],vyi[7])< raioO + raioD)
   {
-   vxi[7]=0
-       vyi[7]=0
+   vxi[7]=1000
+       vyi[7]=1000
       pontos=pontos+1
   }
        if(dist(xd,yd,vxi[8],vyi[8])< raioO + raioD)
   {
-    vxi[8]=0
-       vyi[8]=0
+    vxi[8]=1000
+       vyi[8]=1000
       pontos=pontos+1
   }
       if(dist(xd,yd,vxi[9],vyi[9])< raioO + raioD)
   {
-  vxi[9]=0
-       vyi[9]=0
+  vxi[9]=1000
+       vyi[9]=1000
       pontos=pontos+1
   }
      if(dist(xd,yd,vxi[10],vyi[10])< raioO + raioD)
   {
-       vxi[10]=0
-       vyi[10]=0
+       vxi[10]=1000
+       vyi[10]=1000
       pontos=pontos+1
   }
  if(pontos>bpontos){
@@ -327,6 +329,22 @@ if( estadoDisparo ) {
     y=200
       vidas=vidas-1
   }
- }
+   if(vidas<=0){
+     tela=3;
 }
+ }
   }
+ 
+if(tela==3 || vxi[1]<0 || vxi[2]<0 || vxi[3]<0 || vxi[4]<0 || vxi[5]<0 || vxi[6]<0 || vxi[7]<0 || vxi[8]<0 || vxi[9]<0 || vxi[10]<0){
+      background(150)
+  textSize(30);
+  text('Você perdeu,tente novamente. ',50,200);
+  }
+  }
+
+
+
+
+
+
+
