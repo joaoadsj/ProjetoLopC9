@@ -40,6 +40,7 @@ text('Bem vindo ao jogo,jogador!',10,50);
   text('No nivel 1 o objetivo do jogo é eliminar todos os alvos antes que eles cheguem\n do outro lado da tela. ',10,100);
   text('No nivel 2 o objetivo é apenas chegar ao outro lado.',10,170)
   text('Aperte ENTER para ir ao inicio do jogo.',10,260)
+   text('Voce pode atirar usando CTRL e se movimentar usando as setas do teclado.\n boa sorte.',10,330)
   if ( keyIsDown(ENTER) ){
     tela=2;
   }
